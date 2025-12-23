@@ -1,0 +1,140 @@
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;margin:20px}
+main{max-width:980px;margin:auto}
+h1{font-size:1.4rem;margin-bottom:0.2rem}
+.muted{color:#666;margin-top:0;margin-bottom:1rem}
+#message{min-height:1.5rem;margin-bottom:8px}
+#message.success{color:green}
+#message.error{color:#b00020}
+/* Layout basics */
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #eee;padding:12px;text-align:left}
+.h-name input{width:100%;padding:8px;border-radius:8px;border:1px solid #e0e0e0;background:#fff}
+.wk{width:72px;padding:8px;border-radius:8px;border:1px solid #e0e0e0;background:#fff}
+.controls{margin-top:12px;display:flex;gap:8px;align-items:center}
+.controls button{margin-right:8px;padding:8px 12px;border-radius:8px;border:none;background:#1976d2;color:#fff;cursor:pointer}
+.controls button[disabled]{opacity:0.6;cursor:not-allowed}
+.remove{background:#fff;border:1px solid #eee;padding:6px 10px;border-radius:8px}
+
+/* Card-like rows */
+#config-table tbody tr{background:linear-gradient(180deg,#ffffff,#fbfbfb);box-shadow:0 1px 2px rgba(16,24,40,0.03);border-radius:10px;margin-bottom:10px}
+#config-table tbody tr td{vertical-align:middle}
+#config-table thead th{background:transparent;border-bottom:2px solid #f0f0f0;text-align:left;padding:8px}
+
+/* Hospital name cell */
+.h-name{width:220px}
+
+/* Buttons */
+.controls button#run-solver{background:#1565c0}
+.controls button#save-config{background:#2e7d32}
+.controls button#reload-config{background:#f9a825}
+.controls button#add-hospital{background:#6a1b9a}
+
+/* Compact inputs on small screens */
+@media (max-width:800px){
+	.wk{width:48px}
+	.h-name{width:140px}
+	th,td{padding:8px}
+}
+
+/* calendar modal */
+.modal{position:fixed;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.35);z-index:80}
+.modal.hidden{display:none}
+.modal-inner{background:#fff;padding:12px;border-radius:6px;max-width:920px;width:95%}
+.modal-inner{max-height:90vh;overflow:auto}
+.modal-header{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:8px}
+.calendar-grid{display:flex;flex-direction:column;gap:4px}
+.cal-row{display:flex;gap:4px}
+.cal-cell{flex:1;border:1px solid #eee;padding:8px;min-height:64px;box-sizing:border-box}
+.cal-head{background:#fafafa;font-weight:600;text-align:center}
+.empty{background:#f9f9f9}
+.day-cell{display:flex;flex-direction:column;align-items:flex-end}
+.cal-day-label{align-self:flex-start;font-size:0.9rem;color:#333}
+.cal-day-input{width:60px;margin-top:6px}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}
+
+/* Resident NG day highlight (diagonal hatch) */
+.ng-day{background-image:repeating-linear-gradient(135deg, rgba(220,38,38,0.10) 0 6px, transparent 6px 12px);border-color:#f87171}
+.ng-day .cal-day-label{color:#b91c1c}
+
+/* assign modal styles */
+.assign-modal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:120;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center}
+.assign-modal-box{background:#fff;padding:16px;border-radius:8px;min-width:320px;max-width:90%;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+.assign-modal-box h3{margin:0 0 8px 0}
+.assign-list{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+
+/* Assign modal inline error */
+.assign-error{
+	color: #b00020;
+	background: #fff0f0;
+	border: 1px solid #f5c2c2;
+	padding: 8px 10px;
+	margin: 10px 0 8px 0;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+/* Shake animation for modal box */
+@keyframes shake {
+	0% { transform: translateX(0); }
+	20% { transform: translateX(-6px); }
+	40% { transform: translateX(6px); }
+	60% { transform: translateX(-4px); }
+	80% { transform: translateX(4px); }
+	100% { transform: translateX(0); }
+}
+.assign-modal-box.shake{
+	animation: shake 0.45s ease-in-out;
+}
+
+.assign-btn{padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#0ea5e9;color:#fff;cursor:pointer}
+.assign-cancel{margin-top:8px;padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#f3f4f6;cursor:pointer}
+
+.assign-delete{margin-top:8px;padding:10px 12px;border-radius:8px;border:1px solid #ef4444;background:#ef4444;color:#fff;font-weight:700;cursor:pointer}
+
+/* drop target highlight */
+.day-cell.drop-target{outline:3px dashed rgba(59,130,246,0.6);box-shadow:0 2px 8px rgba(59,130,246,0.06)}
+
+.assigned-label{cursor:grab}
+.assigned-label:active{cursor:grabbing;opacity:0.9}
+
+/* not allowed drop */
+.day-cell.drop-not-allowed{outline:3px dashed rgba(220,38,38,0.7);box-shadow:0 2px 8px rgba(220,38,38,0.06)}
+
+/* undo button */
+.undo-change{display:inline-block;margin:8px 12px;padding:8px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#111827;color:#fff;font-weight:700;cursor:pointer}
+.undo-change.disabled{opacity:0.5;cursor:not-allowed}
+
+/* preview table enhancements */
+.preview-cell-box{display:flex;flex-direction:column;gap:6px;padding:6px}
+.preview-table td{min-width:140px;vertical-align:top;padding:10px}
+.preview-table td.preview-drop-target{outline:3px dashed rgba(16,185,129,0.6);box-shadow:0 2px 8px rgba(16,185,129,0.06)}
+.preview-table td.ng-preview{outline:3px dashed rgba(220,38,38,0.7);box-shadow:0 2px 8px rgba(220,38,38,0.06)}
+.preview-table .assigned-label{background:transparent;color:#111827;padding:4px 6px;border-radius:6px;border:1px solid rgba(0,0,0,0.06);cursor:grab}
+
+/* assigned-day: blue diagonal hatch */
+.assigned-day{background-image:repeating-linear-gradient(135deg, rgba(14,165,233,0.12) 0 6px, transparent 6px 12px);border-color:#38bdf8}
+.assigned-day .cal-day-label{color:#0369a1}
+/* small label under day showing assigned hospital */
+.assigned-label{font-size:0.75rem;color:#0369a1;margin-top:6px;align-self:flex-start;background:rgba(14,165,233,0.06);padding:2px 6px;border-radius:6px}
+
+/* preview table */
+.preview-table{width:100%;border-collapse:collapse;margin-top:12px}
+.preview-table th,.preview-table td{border:1px solid #ddd;padding:8px;vertical-align:top;white-space:pre-line}
+.preview-table th{background:#fafafa}
+
+.run-result{margin-top:12px}
+
+.run-status{margin-left:12px;font-weight:600;color:#1976d2}
+.run-status .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(0,0,0,0.1);border-left-color:#1976d2;border-radius:50%;vertical-align:middle;margin-right:6px;animation:spin 0.9s linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+.upload-area{border:1px dashed #ddd;padding:8px;margin-bottom:12px}
+.upload-result{margin-top:8px;padding:8px;background:#fff;border:1px solid #f0f0f0}
+
+/* per-res summary table */
+.summary-table{width:100%;border-collapse:collapse;margin-top:8px}
+.summary-table th,.summary-table td{border:1px solid #eee;padding:6px;text-align:left}
+.summary-table thead th{background:#fafafa}
+.summary-table tr.not-met td{background:#fff2f2;border-color:#ffc9c9}
+.summary-table tr.not-met td:first-child{font-weight:700;color:#b00020}
+.per-res-summary h4{margin:8px 0}

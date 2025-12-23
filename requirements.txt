@@ -1,0 +1,10 @@
+ortools
+openpyxl
+pandas
+python-dateutil
+jpholiday
+python-dotenv
+fastapi
+uvicorn[standard]
+requests
+httpx

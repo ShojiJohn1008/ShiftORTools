@@ -1,0 +1,870 @@
+INFO:     Will watch for changes in these directories: ['/Users/shoji/Desktop/ShiftORTools']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [19252] using WatchFiles
+INFO:     Started server process [19297]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50097 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:50104 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50229 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50229 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50230 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50229 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50232 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50232 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50232 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50232 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50233 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50260 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50260 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50352 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50352 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50386 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19297]
+INFO:     Started server process [20080]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20080]
+INFO:     Started server process [20083]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20083]
+INFO:     Started server process [20086]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20086]
+INFO:     Started server process [20088]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50442 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50443 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50443 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50443 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50443 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50460 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50460 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50461 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50465 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50465 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50467 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50477 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50477 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50477 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50477 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50478 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50492 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50487 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50492 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50492 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50492 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50492 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50492 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50487 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50495 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50495 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50495 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50495 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50495 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50495 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50496 - "GET /api/schedule?month=2026-02 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50496 - "GET /api/schedule?month=2026-03 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50496 - "GET /api/schedule?month=2026-04 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50498 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50511 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50521 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50521 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50521 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20088]
+INFO:     Started server process [20707]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20707]
+INFO:     Started server process [20710]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20710]
+INFO:     Started server process [20711]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20711]
+INFO:     Started server process [20712]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50554 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50555 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50555 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50555 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50563 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50566 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50566 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50570 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50570 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50573 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50574 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50574 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50579 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50580 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50585 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50585 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50586 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50586 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50586 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50586 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50586 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50596 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50617 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20712]
+INFO:     Started server process [20821]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20821]
+INFO:     Started server process [20824]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20824]
+INFO:     Started server process [20826]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20826]
+INFO:     Started server process [20827]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50644 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50644 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50645 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50644 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50651 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50651 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50651 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50651 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50712 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50712 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50713 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50713 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50716 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50720 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50721 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50723 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50724 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50724 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50727 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50727 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50727 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50728 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50728 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50731 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50731 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50739 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50739 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50740 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50741 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50742 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50743 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50763 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50763 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20827]
+INFO:     Started server process [20966]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20966]
+INFO:     Started server process [20969]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50799 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50799 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50800 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50800 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50800 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50802 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/is_holiday?date=2026-01-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50802 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50806 - "GET /api/is_holiday?date=2026-01-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50806 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50810 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50814 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50815 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50815 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50944 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51022 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51022 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51023 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51023 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51023 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51027 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51027 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51044 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51045 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51045 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51049 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51049 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51207 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51207 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51207 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51207 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:51208 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51209 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51209 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51210 - "GET /api/is_holiday?date=2026-01-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51210 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51211 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51211 - "GET /api/is_holiday?date=2026-01-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51211 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51213 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51214 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51214 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52495 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52495 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52524 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52525 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52526 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52526 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52527 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52532 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52534 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52536 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52537 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52537 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52537 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52539 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52539 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52539 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52540 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52541 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52557 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52557 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52583 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52590 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52591 - "PUT /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52591 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52591 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52594 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52629 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52629 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52630 - "POST /api/run?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52639 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20969]
+INFO:     Started server process [23651]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23651]
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Started server process [23654]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [23657]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23657]
+INFO:     Started server process [23659]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23659]
+INFO:     Started server process [23668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23668]
+INFO:     Started server process [23669]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52701 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52701 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52702 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52701 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52706 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52709 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52710 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52710 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52710 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52710 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52711 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52711 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52711 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52711 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52735 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52736 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52736 - "GET /api/schedule?month=2025-12 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52736 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52736 - "GET /api/is_holiday?date=2026-01-07 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52738 - "GET /api/is_holiday?date=2026-01-07 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52793 - "GET /api/is_holiday?date=2026-01-16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52835 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52835 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52836 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52836 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52840 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/is_holiday?date=2026-01-18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/is_holiday?date=2026-01-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/is_holiday?date=2026-01-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/is_holiday?date=2026-01-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/is_holiday?date=2026-01-07 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52845 - "GET /api/is_holiday?date=2026-01-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52847 - "GET /api/is_holiday?date=2026-01-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52847 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52848 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52849 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52852 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23669]
+INFO:     Started server process [23888]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23888]
+INFO:     Started server process [23899]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23899]
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Started server process [23902]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [23903]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23903]
+INFO:     Started server process [23905]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52940 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52940 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52941 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52941 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52944 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52944 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52945 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52956 - "GET /api/download?month=2026-01 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/output.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23905]
+INFO:     Started server process [24087]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/output.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24087]
+INFO:     Started server process [24097]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52977 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52977 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52977 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52977 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52977 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52977 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52982 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52982 - "GET /api/is_holiday?date=2026-01-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52982 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52982 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/is_holiday?date=2026-01-13 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/is_holiday?date=2026-01-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/is_holiday?date=2026-01-13 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "GET /api/is_holiday?date=2026-01-15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52986 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52989 - "GET /api/is_holiday?date=2026-01-20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53002 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53002 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24097]
+INFO:     Started server process [24143]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24143]
+INFO:     Started server process [24145]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24145]
+INFO:     Started server process [24157]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/shiftortools/api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24157]
+INFO:     Started server process [24160]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53081 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53081 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53081 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53089 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53099 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53100 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53100 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53100 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53101 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53145 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53145 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53146 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53146 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53154 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53154 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53154 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "GET /api/is_holiday?date=2026-01-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53160 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53161 - "GET /api/is_holiday?date=2026-01-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53161 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53161 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53161 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53162 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53162 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53162 - "POST /api/manual_move HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in '.venv/lib/python3.13/site-packages/jpholiday/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24160]
+WARNING:  WatchFiles detected changes in '.venv/lib/python3.13/site-packages/jpholiday/functions.py'. Reloading...
+INFO:     Started server process [24271]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in '.venv/lib/python3.13/site-packages/jpholiday/jpholiday.py'. Reloading...
+INFO:     Started server process [24272]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [24273]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53205 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53205 - "GET /static/styles.css?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53206 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53206 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53208 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53208 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53208 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53210 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53212 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53213 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53216 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53216 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53218 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53219 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53220 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53220 - "GET /api/is_holiday?date=2026-01-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53220 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53222 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53232 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53232 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53232 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53285 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53285 - "GET /static/styles.css?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53286 - "GET /static/app.js?v=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53286 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53286 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53286 - "GET /static/app.js?v=2 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53286 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53290 - "POST /api/upload_both HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53290 - "POST /api/run?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53290 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53371 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53371 - "GET /api/schedule?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53372 - "GET /api/residents?month=2026-01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_unassign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_assign HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "GET /api/is_holiday?date=2026-01-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /api/manual_move HTTP/1.1" 200 OK

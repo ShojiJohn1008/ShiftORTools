@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShiftORTools - Config Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/styles.css?v=2">
+</head>
+<body>
+  <main>
+    <h1>病院 平日スロット設定 編集</h1>
+    <p class="muted">各行は病院の設定です。スロットはカレンダーモーダルで日毎に指定します。保存すると `/api/config` に PUT します。</p>
+
+    <div id="message" aria-live="polite"></div>
+
+    <div id="editor">
+      <div id="upload-area" class="upload-area">
+        <label>対象月: <input type="month" id="upload-month" /></label>
+        <div>
+          <label>研修医NG日（院内シート）: <input type="file" id="sheet1-file" accept=".csv,.xls,.xlsx" /></label>
+        </div>
+        <div>
+          <label>院外研修日（院外シート）: <input type="file" id="sheet2-file" accept=".csv,.xls,.xlsx" /></label>
+        </div>
+        <div>
+          <button id="upload-both" class="px-3 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700">アップロードして解析</button>
+        </div>
+        <div id="upload-result" class="upload-result"></div>
+      </div>
+      <div style="margin-top:8px;">
+        <label>一人当たり上限回数: <input id="max-assignments" type="number" min="1" value="2" class="wk" /></label>
+        <small class="muted">手動割当時の上限（未指定は2）</small>
+      </div>
+      <table id="config-table">
+        <thead>
+          <tr>
+            <th>病院名</th>
+            <th>設定件数</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+
+        <div class="controls">
+          <button id="add-hospital" class="px-2 py-1 rounded bg-purple-600 text-white hover:bg-purple-700">病院を追加</button>
+          <button id="save-config" class="px-2 py-1 rounded bg-green-600 text-white hover:bg-green-700">保存</button>
+          <button id="reload-config" class="px-2 py-1 rounded bg-yellow-400 text-black hover:brightness-95">再読み込み</button>
+          <button id="run-solver" class="px-2 py-1 rounded bg-blue-600 text-white hover:bg-blue-700">スケジュール実行・保存</button>
+          <button id="download-xlsx" class="px-2 py-1 rounded bg-gray-700 text-white hover:bg-gray-800">Excelでダウンロード</button>
+          <span id="run-status" class="run-status" aria-live="polite"></span>
+        </div>
+      <div id="run-result" class="run-result"></div>
+    </div>
+
+    <template id="row-template">
+      <tr>
+        <td class="h-name"><input class="h-name-input" /></td>
+        <td><span class="cal-summary">0 日</span></td>
+        <td>
+          <button class="calendar px-2 py-1 rounded bg-sky-500 text-white hover:bg-sky-600">カレンダー</button>
+          <button class="remove px-2 py-1 rounded border border-gray-300 text-gray-700 hover:bg-gray-100">削除</button>
+        </td>
+      </tr>
+    </template>
+
+    <!-- Calendar modal -->
+    <div id="calendar-modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <button id="cal-prev" class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300">◀</button>
+          <h3 id="cal-title">カレンダー</h3>
+          <button id="cal-next" class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300">▶</button>
+        </div>
+
+        <section id="preview-section">
+          <h2>スケジュール プレビュー</h2>
+          <div id="preview-area"></div>
+        </section>
+        <div id="cal-bulk-controls" style="margin:8px 0;display:flex;gap:8px;align-items:center;">
+          <label>一括値: <input id="bulk-value" type="number" min="0" value="1" class="w-20 px-2 py-1 border rounded"/></label>
+          <button id="bulk-tue" class="px-2 py-1 rounded bg-amber-500 text-white hover:bg-amber-600">一括: 火曜日</button>
+          <button id="bulk-weekdays" class="px-2 py-1 rounded bg-emerald-500 text-white hover:bg-emerald-600">一括: 平日</button>
+          <button id="bulk-sat" class="px-2 py-1 rounded bg-violet-500 text-white hover:bg-violet-600">一括: 土曜日</button>
+          <button id="bulk-clear" class="px-2 py-1 rounded border border-gray-300 text-gray-700 hover:bg-gray-100">クリア</button>
+        </div>
+        <div id="cal-grid" class="calendar-grid"></div>
+        <div class="modal-actions">
+          <button id="cal-save" class="px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700">保存</button>
+          <button id="cal-close" class="px-3 py-1 rounded border border-gray-300 text-gray-700 hover:bg-gray-100">閉じる</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="/static/app.js?v=2"></script>
+</body>
+</html>
