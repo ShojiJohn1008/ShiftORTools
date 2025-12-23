@@ -16,12 +16,18 @@ from fastapi import UploadFile, File, Form
 from fastapi.responses import FileResponse
 from src.shiftortools.output import write_excel
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+FRONTEND_DIR = ROOT_DIR / 'frontend'
 CFG_PATH = Path('config/hospital_weekday_slots.json')
 
 app = FastAPI(title='ShiftORTools Config API')
 
-# Serve frontend static files from the frontend/ directory
-app.mount("/static", StaticFiles(directory="frontend"), name="static")
+# Serve frontend static files from the frontend/ directory (use absolute path)
+if FRONTEND_DIR.exists():
+    app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
+else:
+    # fallback: try relative path
+    app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
 app.add_middleware(
     CORSMiddleware,
@@ -189,8 +195,12 @@ def post_config(payload: dict):
 
 @app.get('/')
 def root():
-    index = Path('frontend/index.html')
+    index = FRONTEND_DIR / 'index.html'
     if not index.exists():
+        # try relative fallback and log
+        rel = Path('frontend') / 'index.html'
+        if rel.exists():
+            return FileResponse(rel)
         raise HTTPException(status_code=404, detail='frontend not found')
     return FileResponse(index)
 
