@@ -2755,3 +2755,283 @@ OSError: [Errno 9] Bad file descriptor
 
 Current thread 0x000000020b946080 (most recent call first):
   <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/sequence.py', '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/interface.py', '.venv_test/lib/python3.13/site-packages/httpcore/_async/connection_pool.py', '.venv_test/lib/python3.13/site-packages/httpcore/_async/interfaces.py', '.venv_test/lib/python3.13/site-packages/dateutil/utils.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/namespace.py', '.venv_test/lib/python3.13/site-packages/httpcore/_async/connection.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/cell_range.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/properties.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/__init__.py', '.venv_test/lib/python3.13/site-packages/httpcore/_sync/connection_pool.py', '.venv_test/lib/python3.13/site-packages/openpyxl/compat/singleton.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/anyio/lowlevel.py', '.venv_test/lib/python3.13/site-packages/httpcore/_async/http11.py', '.venv_test/lib/python3.13/site-packages/anyio/functools.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/chart/picture.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/xdr.py', '.venv_test/lib/python3.13/site-packages/requests/status_codes.py', '.venv_test/lib/python3.13/site-packages/starlette/formparsers.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/drawing.py', '.venv_test/lib/python3.13/site-packages/openpyxl/compat/abc.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/absl/flags/_exceptions.py', '.venv_test/lib/python3.13/site-packages/requests/models.py', '.venv_test/lib/python3.13/site-packages/openpyxl/xml/__init__.py', '.venv_test/lib/python3.13/site-packages/httpcore/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/inference.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/line.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/numbers.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/container.py', '.venv_test/lib/python3.13/site-packages/absl/flags/_argument_parser.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/hyperlink.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/_writer.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/print_settings.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/trendline.py', '.venv_test/lib/python3.13/site-packages/openpyxl/formatting/rule.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/shapes.py', '.venv_test/lib/python3.13/site-packages/openpyxl/reader/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/dimensions.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/table.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/google/protobuf/json_format.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/text_format.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/type_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/descriptor_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/__init__.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/proto_json.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/service_reflection.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/descriptor_pool.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/timestamp.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/struct_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/wrappers_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/any_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/text_encoding.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/timestamp_pb2.py', '.venv_test/lib/python3.13/site-packages/google/protobuf/unknown_fields.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/absl/flags/_flagvalues.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/graphic.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/borders.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/escape.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/smart_tag.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/named_styles.py', '.venv_test/lib/python3.13/site-packages/dateutil/_common.py', '.venv_test/lib/python3.13/site-packages/openpyxl/compat/numbers.py', '.venv_test/lib/python3.13/site-packages/anyio/from_thread.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/styles/cell_style.py', '.venv_test/lib/python3.13/site-packages/openpyxl/reader/workbook.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/external_reference.py', '.venv_test/lib/python3.13/site-packages/absl/testing/_pretty_print_reporter.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/scatter_chart.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/protection.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/worksheet.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/cell.py', '.venv_test/lib/python3.13/site-packages/openpyxl/formula/__init__.py', '.venv_test/lib/python3.13/site-packages/absl/flags/_defines.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chartsheet/protection.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/picture.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/comments/comment_sheet.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/reference.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chartsheet/chartsheet.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/properties.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/relation.py', '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/stylesheet.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/google/protobuf/util/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/core.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/builtins.py', '.venv_test/lib/python3.13/site-packages/httpcore/_sync/http_proxy.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/slots.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/jpholiday/checker/interface.py', '.venv_test/lib/python3.13/site-packages/jpholiday/checker/utils.py', '.venv_test/lib/python3.13/site-packages/jpholiday/checker/__init__.py', '.venv_test/lib/python3.13/site-packages/jpholiday/checker/checker.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/reader/drawings.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/fills.py', '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/relationship.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/scenario.py', '.venv_test/lib/python3.13/site-packages/absl/testing/parameterized.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/effect.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/title.py', '.venv_test/lib/python3.13/site-packages/absl/testing/_bazelize_command.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/surface_chart.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/writer/theme.py', '.venv_test/lib/python3.13/site-packages/openpyxl/pivot/cache.py', '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/custom.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/stock_chart.py', '.venv_test/lib/python3.13/site-packages/absl/flags/_validators.py', '.venv_test/lib/python3.13/site-packages/jpholiday/model/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/excel.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/jpholiday/cache/__init__.py', '.venv_test/lib/python3.13/site-packages/jpholiday/cache/in_memory.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/child.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/formula.py', '.venv_test/lib/python3.13/site-packages/openpyxl/formatting/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/__init__.py', '.venv_test/lib/python3.13/site-packages/anyio/to_process.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/controls.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/page.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/descriptors.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/datetime.py', '.venv_test/lib/python3.13/site-packages/openpyxl/descriptors/serialisable.py', '.venv_test/lib/python3.13/site-packages/anyio/to_thread.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/jpholiday/cache/interface.py', '.venv_test/lib/python3.13/site-packages/jpholiday/registy/__init__.py', '.venv_test/lib/python3.13/site-packages/jpholiday/registy/registry.py', '.venv_test/lib/python3.13/site-packages/jpholiday/registy/interface.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/tzdata/zoneinfo/America/Indiana/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/tzdata/zoneinfo/Canada/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/tzdata/zoneinfo/Chile/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/urllib3/contrib/emscripten/fetch.py', '.venv_test/lib/python3.13/site-packages/urllib3/contrib/emscripten/request.py', '.venv_test/lib/python3.13/site-packages/uvloop/includes/__init__.py', '.venv_test/lib/python3.13/site-packages/urllib3/contrib/emscripten/response.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/colors.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/label.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/styleable.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/errors.py', '.venv_test/lib/python3.13/site-packages/jpholiday/model/holiday.py', '.venv_test/lib/python3.13/site-packages/openpyxl/xml/constants.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chartsheet/custom.py', '.venv_test/lib/python3.13/site-packages/absl/testing/xml_reporter.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/protection.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/httptools/parser/errors.py', '.venv_test/lib/python3.13/site-packages/httptools/parser/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/manifest.py', '.venv_test/lib/python3.13/site-packages/starlette/convertors.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/series.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/httpcore/_async/http2.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/chart/updown_bars.py', '.venv_test/lib/python3.13/site-packages/openpyxl/reader/strings.py', '.venv_test/lib/python3.13/site-packages/openpyxl/formula/translate.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/fill.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/fonts.py', '.venv_test/lib/python3.13/site-packages/absl/flags/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/views.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/numpy/matrixlib/tests/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/requests/cookies.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/test_runtime.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/packaging/extended.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/bubble_chart.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/alignment.py', '.venv_test/lib/python3.13/site-packages/starlette/background.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/text.py', '.venv_test/lib/python3.13/site-packages/dateutil/tzwin.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/exceptions.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/picture.py', '.venv_test/lib/python3.13/site-packages/dateutil/__init__.py', '.venv_test/lib/python3.13/site-packages/starlette/exceptions.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/copier.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/external_link/external.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/datavalidation.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/properties.py', '.venv_test/lib/python3.13/site-packages/dateutil/relativedelta.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/function_group.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/area_chart.py', '.venv_test/lib/python3.13/site-packages/openpyxl/comments/author.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/units.py', '.venv_test/lib/python3.13/site-packages/starlette/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/_reader.py', '.venv_test/lib/python3.13/site-packages/openpyxl/utils/dataframe.py', '.venv_test/lib/python3.13/site-packages/pydantic/json.py', '.venv_test/lib/python3.13/site-packages/starlette/_exception_handler.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/bar_chart.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/anyio/streams/buffered.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/file.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/memory.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/starlette/_utils.py', '.venv_test/lib/python3.13/site-packages/openpyxl/drawing/geometry.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/table.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/text.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/drawing.py', '.venv_test/lib/python3.13/site-packages/absl/flags/_helpers.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/stapled.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/smart_tags.py', '.venv_test/lib/python3.13/site-packages/starlette/config.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ndarray_shape_manipulation.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/array_constructors.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/numerictypes.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ndarray_conversion.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/tls.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ndarray_misc.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ufunc_config.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/dtype.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/arithmetic.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/literal.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/warnings_and_errors.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ufunclike.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/arrayterator.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/lib_user_array.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/flatiter.py', '.venv_test/lib/python3.13/site-packages/httpcore/_async/http_proxy.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/index_tricks.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/simple.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/array_like.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/recfunctions.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/arrayprint.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/lib_version.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/shape.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/lib_utils.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/nditer.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ma.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/ufuncs.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/einsumfunc.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/related.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/line_chart.py', '.venv_test/lib/python3.13/site-packages/dateutil/_version.py', '.venv_test/lib/python3.13/site-packages/openpyxl/comments/__init__.py', '.venv_test/lib/python3.13/site-packages/requests/structures.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/anyio/abc/_eventloop.py', '.venv_test/lib/python3.13/site-packages/anyio/abc/_testing.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/starlette/middleware/base.py', '.venv_test/lib/python3.13/site-packages/anyio/abc/_sockets.py', '.venv_test/lib/python3.13/site-packages/dateutil/zoneinfo/rebuild.py', '.venv_test/lib/python3.13/site-packages/starlette/middleware/authentication.py', '.venv_test/lib/python3.13/site-packages/anyio/abc/_resources.py', '.venv_test/lib/python3.13/site-packages/dateutil/zoneinfo/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/worksheet/header_footer.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/multiarray.py', '.venv_test/lib/python3.13/site-packages/openpyxl/comments/comments.py', '.venv_test/lib/python3.13/site-packages/openpyxl/workbook/workbook.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/plotarea.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/numeric.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/_3d.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/openpyxl/compat/product.py', '.venv_test/lib/python3.13/site-packages/openpyxl/chart/radar_chart.py', '.venv_test/lib/python3.13/site-packages/dateutil/rrule.py', '.venv_test/lib/python3.13/site-packages/anyio/streams/__init__.py', '.venv_test/lib/python3.13/site-packages/openpyxl/styles/proxy.py', '.venv_test/lib/python3.13/site-packages/openpyxl/reader/excel.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/scalars.py', '.venv_test/lib/python3.13/site-packages/starlette/middleware/__init__.py', '.venv_test/lib/python3.13/site-packages/numpy/typing/tests/data/pass/bitwise_ops.py', '.venv_test/lib/python3.13/site-packages/anyio/abc/_tasks.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020b946080 (most recent call first):
+  <no Python frame>
