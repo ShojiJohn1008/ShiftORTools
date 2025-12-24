@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from typing import Any, Dict
+from typing import IO
 import openpyxl
 from openpyxl.utils import get_column_letter
 
@@ -235,7 +236,7 @@ def write_excel(shiftjson: Dict[str, Any], solver_result: Dict[str, Any], out_pa
     dates = solver_result.get('dates', [])
     assignments = solver_result.get('assignments', {})
     from datetime import date as _date
-    from src.shiftortools.utils import is_holiday
+    from shiftortools.utils import is_holiday
 
     cur_row = start_row
     # map each output row to its date string (for border decisions)
@@ -498,6 +499,20 @@ def write_excel(shiftjson: Dict[str, Any], solver_result: Dict[str, Any], out_pa
     # violations placeholder
     w4 = wb.create_sheet('violations')
     w4.append(['note'])
+
+    # Support both file path (str/Path) and file-like objects (BytesIO)
+    try:
+        # file-like object: has .write attribute
+        if hasattr(out_path, 'write'):
+            wb.save(out_path)
+            try:
+                out_path.seek(0)
+            except Exception:
+                pass
+            return
+    except Exception:
+        # fallback to path-based saving
+        pass
 
     p = Path(out_path)
     p.parent.mkdir(parents=True, exist_ok=True)

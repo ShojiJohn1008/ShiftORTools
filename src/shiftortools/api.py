@@ -1,7 +1,8 @@
 """FastAPI app to get/update hospital_weekday_slots.json configuration."""
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
+import io
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, validator
 from typing import Dict
@@ -15,6 +16,8 @@ import tempfile
 from fastapi import UploadFile, File, Form
 from fastapi.responses import FileResponse
 from shiftortools.output import write_excel
+import logging
+import traceback
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = ROOT_DIR / 'frontend'
@@ -828,15 +831,33 @@ def download_schedule(month: str = None):
         with shift_path.open('r', encoding='utf-8') as f:
             shiftjson = json.load(f)
 
-    # create temp xlsx
-    with tempfile.NamedTemporaryFile(delete=False, suffix='.xlsx') as tf:
-        tmp_path = tf.name
+    # Try to build Excel in-memory first to avoid potential filesystem permission issues
+    buf = io.BytesIO()
     try:
-        write_excel(shiftjson, solver_result, tmp_path)
-        return FileResponse(tmp_path, media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', filename=f'{month}-schedule.xlsx')
-    finally:
-        # Note: we don't unlink immediately because FileResponse will stream the file.
-        pass
+        write_excel(shiftjson, solver_result, buf)
+        try:
+            buf.seek(0)
+        except Exception:
+            pass
+        return StreamingResponse(buf, media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', headers={
+            'Content-Disposition': f'attachment; filename="{month}-schedule.xlsx"'
+        })
+    except Exception as e:
+        # fallback to disk-based temp file (useful if memory save fails)
+        logging.getLogger(__name__).warning('in-memory excel build failed, falling back to temp file: %s', e)
+        logging.getLogger(__name__).error(traceback.format_exc())
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.xlsx') as tf:
+            tmp_path = tf.name
+        try:
+            write_excel(shiftjson, solver_result, tmp_path)
+            return FileResponse(tmp_path, media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', filename=f'{month}-schedule.xlsx')
+        except Exception as e2:
+            logging.getLogger(__name__).error('failed to build excel on disk fallback: %s', traceback.format_exc())
+            try:
+                Path(tmp_path).unlink()
+            except Exception:
+                pass
+            raise HTTPException(status_code=500, detail=f'failed to build excel: {e2}')
 
 
 @app.post('/api/upload_sheet1')
