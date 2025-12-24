@@ -15,4 +15,4 @@ if [ -z "${PYTHON}" ]; then
   PYTHON=python
 fi
 # Run uvicorn with reload for dev
-exec $PYTHON -m uvicorn src.shiftortools.api:app --reload --host 127.0.0.1 --port 8000
+exec $PYTHON -m uvicorn shiftortools.api:app --reload --host 127.0.0.1 --port 8000
