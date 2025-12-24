@@ -9,12 +9,12 @@ from datetime import datetime
 from pathlib import Path
 import json
 from datetime import date, timedelta
-from src.shiftortools import solver
+from shiftortools import solver
 import pandas as pd
 import tempfile
 from fastapi import UploadFile, File, Form
 from fastapi.responses import FileResponse
-from src.shiftortools.output import write_excel
+from shiftortools.output import write_excel
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = ROOT_DIR / 'frontend'
@@ -628,7 +628,7 @@ def api_is_holiday(date: str = None):
     except Exception:
         raise HTTPException(status_code=400, detail='invalid date')
     try:
-        from src.shiftortools.utils import is_holiday
+        from .utils import is_holiday
         res = bool(is_holiday(d))
     except Exception:
         res = False
@@ -688,7 +688,7 @@ def upload_both(month: str = Form(...), sheet1: UploadFile = File(...), sheet2: 
         raise HTTPException(status_code=400, detail=f'cannot read sheet2: {e}')
 
     # parse sheet1
-    from src.shiftortools.parsers import parse_sheet1, parse_sheet2
+    from shiftortools.parsers import parse_sheet1, parse_sheet2
 
     residents, errors1 = parse_sheet1(df1, month)
     resident_names = [r.name for r in residents]
@@ -696,7 +696,7 @@ def upload_both(month: str = Form(...), sheet1: UploadFile = File(...), sheet2: 
     assignments, unknowns, errors2 = parse_sheet2(df2, month, resident_names)
 
     # Build offsite raw-info mapping from uploaded sheet2: date_iso -> list of raw info strings
-    from src.shiftortools.utils import normalize_date_input
+    from shiftortools.utils import normalize_date_input
     offsite_map = {}
     # replicate date inheritance logic similar to parse_sheet2
     last_date_token = None
@@ -845,7 +845,7 @@ def upload_sheet1(month: str = Form(...), sheet1: UploadFile = File(...)):
         df1 = _read_upload_to_df(sheet1)
     except Exception as e:
         raise HTTPException(status_code=400, detail=f'cannot read sheet1: {e}')
-    from src.shiftortools.parsers import parse_sheet1
+    from .parsers import parse_sheet1
     residents, errors1 = parse_sheet1(df1, month)
     res_data = [{'name': r.name, 'rotation_type': r.rotation_type, 'ng_dates': r.ng_dates, 'ng_reasons': r.ng_reasons} for r in residents]
     return {'status': 'ok', 'residents': res_data, 'errors': errors1}
@@ -857,7 +857,7 @@ def upload_sheet2(month: str = Form(...), sheet2: UploadFile = File(...), reside
         df2 = _read_upload_to_df(sheet2)
     except Exception as e:
         raise HTTPException(status_code=400, detail=f'cannot read sheet2: {e}')
-    from src.shiftortools.parsers import parse_sheet2
+    from shiftortools.parsers import parse_sheet2
     names = []
     if resident_names:
         try:
