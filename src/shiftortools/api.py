@@ -860,6 +860,64 @@ def download_schedule(month: str = None):
             raise HTTPException(status_code=500, detail=f'failed to build excel: {e2}')
 
 
+@app.post('/api/clear_transient')
+def clear_transient(month: str = None, clear_config: bool = False, confirm: bool = False):
+    """Clear transient output files and optionally the persistent config.
+
+    Query params:
+      - month: optional YYYY-MM to restrict to a month; if omitted, clears all output/*-solver.json and *-shift.json
+      - clear_config: if true, moves `config/hospital_weekday_slots.json` to a .bak file
+      - confirm: must be true to proceed (safety)
+    """
+    if not confirm:
+        raise HTTPException(status_code=400, detail='confirm=true required')
+
+    removed = []
+    outdir = Path('output')
+    if month:
+        for suffix in (f'{month}-solver.json', f'{month}-shift.json'):
+            p = outdir / suffix
+            try:
+                if p.exists():
+                    p.unlink()
+                    removed.append(str(p))
+            except Exception:
+                pass
+    else:
+        try:
+            for p in outdir.glob('*-solver.json'):
+                try:
+                    p.unlink()
+                    removed.append(str(p))
+                except Exception:
+                    pass
+            for p in outdir.glob('*-shift.json'):
+                try:
+                    p.unlink()
+                    removed.append(str(p))
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+    if clear_config:
+        try:
+            if CFG_PATH.exists():
+                bak = CFG_PATH.with_suffix('.json.bak')
+                try:
+                    CFG_PATH.replace(bak)
+                except Exception:
+                    try:
+                        CFG_PATH.rename(bak)
+                    except Exception:
+                        pass
+                removed.append(str(bak))
+        except Exception:
+            pass
+
+    return {'status': 'ok', 'removed': removed}
+
+
 @app.post('/api/upload_sheet1')
 def upload_sheet1(month: str = Form(...), sheet1: UploadFile = File(...)):
     try:

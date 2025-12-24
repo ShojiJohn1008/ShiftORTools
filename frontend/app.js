@@ -19,6 +19,22 @@ let residentsCache = {}; // month -> residents list
 let currentDragMeta = null; // {resident, from_date, from_hospital}
 let lastChanges = []; // stack of manual changes for undo
 
+// Initialize/clear client-side transient state and UI
+function initState(){
+  currentCfg = {};
+  scheduleCache = {};
+  residentsCache = {};
+  residentHighlight = null;
+  currentDragMeta = null;
+  lastChanges = [];
+  // clear UI areas
+  try{ tableBody.innerHTML = ''; }catch(e){}
+  try{ if(document.getElementById('preview-area')) document.getElementById('preview-area').innerHTML = ''; }catch(e){}
+  try{ if(document.getElementById('run-result')) document.getElementById('run-result').innerHTML = ''; }catch(e){}
+  try{ calGrid.innerHTML = ''; }catch(e){}
+  updateUndoButtonState();
+}
+
 function pushChange(change){
   lastChanges.push(change);
   updateUndoButtonState();
@@ -466,13 +482,27 @@ document.addEventListener('keydown', (e)=>{
 
 document.getElementById('add-hospital').addEventListener('click', ()=> addHospitalRow());
 document.getElementById('save-config').addEventListener('click', ()=> saveConfig());
-document.getElementById('reload-config').addEventListener('click', ()=> loadConfig());
+document.getElementById('reload-config').addEventListener('click', async ()=> {
+  try{
+    await fetch('/api/clear_transient?clear_config=true&confirm=true', {method:'POST'});
+  }catch(e){ console.warn('clear_transient failed', e); }
+  initState();
+  await loadConfig();
+});
 document.getElementById('run-solver').addEventListener('click', ()=> runSolver());
 document.getElementById('download-xlsx')?.addEventListener('click', ()=> downloadXlsx());
 document.getElementById('upload-both').addEventListener('click', ()=> uploadBoth());
 
-// initial load
-loadConfig();
+// initial load: clear transient UI/state then load persistent config
+// On initial load, request server to clear transient/persistent state (config+outputs),
+// then initialize client and load (which will now show empty/default state).
+(async ()=>{
+  try{
+    await fetch('/api/clear_transient?clear_config=true&confirm=true', {method:'POST'});
+  }catch(e){ console.warn('clear_transient failed', e); }
+  initState();
+  await loadConfig();
+})();
 
 async function uploadBoth(){
   const monthInput = document.getElementById('upload-month').value;
