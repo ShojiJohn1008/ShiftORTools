@@ -324,11 +324,230 @@ th{
   box-shadow:0 8px 25px rgba(107,114,128,0.5);
 }
 
-/* Compact inputs on small screens */
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Large screens (PC/Desktop) - 1024px and above */
+@media (min-width:1024px){
+  body{
+    padding:40px;
+  }
+  main{
+    max-width:1100px;
+    padding:48px 56px;
+    border-radius:28px;
+  }
+  h1{
+    font-size:2.2rem;
+    margin-bottom:12px;
+  }
+  .muted{
+    font-size:1.1rem;
+    margin-bottom:2rem;
+  }
+  /* Larger table cells */
+  th,td{
+    padding:20px 24px;
+    font-size:1.05rem;
+  }
+  th{
+    font-size:1rem;
+  }
+  /* Larger input fields */
+  .h-name input{
+    padding:14px 18px;
+    font-size:1.05rem;
+  }
+  .h-name{
+    width:280px;
+  }
+  .wk{
+    width:90px;
+    padding:14px 16px;
+    font-size:1.05rem;
+  }
+  /* Larger buttons */
+  .controls{
+    padding:28px;
+    gap:16px;
+  }
+  .controls button{
+    padding:14px 24px;
+    font-size:1rem;
+  }
+  .action-buttons button{
+    padding:12px 20px;
+    font-size:1rem;
+  }
+  /* Settings row */
+  .settings-row{
+    padding:24px 28px;
+    margin:28px 0;
+  }
+  .settings-label-text{
+    font-size:1.1rem;
+  }
+  /* Upload area */
+  .upload-area{
+    padding:32px;
+  }
+  .upload-area label{
+    font-size:1.05rem;
+    margin-bottom:16px;
+  }
+  .upload-area button#upload-both{
+    padding:16px 32px;
+    font-size:1.1rem;
+  }
+  /* Details section */
+  details{
+    padding:24px 32px;
+  }
+  details summary{
+    font-size:1.1rem;
+  }
+  /* Modal */
+  .modal-inner{
+    padding:32px;
+    max-width:1000px;
+  }
+  .modal-header h3{
+    font-size:1.5rem;
+  }
+  .nav-btn{
+    padding:12px 22px;
+    font-size:1rem;
+  }
+  .bulk-controls{
+    padding:20px;
+    gap:16px;
+  }
+  .bulk-btn{
+    padding:12px 20px;
+    font-size:1rem;
+  }
+  .modal-actions button{
+    padding:14px 28px;
+    font-size:1rem;
+  }
+}
+
+/* Extra large screens (Wide monitors) - 1440px and above */
+@media (min-width:1440px){
+  body{
+    padding:60px;
+  }
+  main{
+    max-width:1200px;
+    padding:56px 72px;
+  }
+  h1{
+    font-size:2.4rem;
+  }
+  .controls{
+    gap:18px;
+  }
+  .controls button{
+    padding:16px 28px;
+  }
+}
+
+/* Medium screens (Tablets) - 801px to 1023px */
+@media (min-width:801px) and (max-width:1023px){
+  body{
+    padding:32px;
+  }
+  main{
+    padding:36px 44px;
+  }
+  h1{
+    font-size:1.9rem;
+  }
+}
+
+/* Small screens (Mobile) - 800px and below */
 @media (max-width:800px){
-	.wk{width:48px}
-	.h-name{width:140px}
-	th,td{padding:8px}
+  body{
+    padding:16px;
+  }
+  main{
+    padding:24px 20px;
+    border-radius:20px;
+  }
+  h1{
+    font-size:1.5rem;
+  }
+  .muted{
+    font-size:0.95rem;
+  }
+  .wk{
+    width:60px;
+    padding:10px 12px;
+  }
+  .h-name{
+    width:160px;
+  }
+  th,td{
+    padding:12px 14px;
+    font-size:0.95rem;
+  }
+  .controls{
+    padding:20px;
+    gap:10px;
+  }
+  .controls button{
+    padding:10px 16px;
+    font-size:0.9rem;
+  }
+  .action-buttons{
+    flex-direction:column;
+    gap:8px;
+  }
+  .action-buttons button{
+    width:100%;
+    padding:10px 14px;
+  }
+  .settings-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:16px 20px;
+  }
+  .upload-area{
+    padding:20px;
+  }
+  .upload-area button#upload-both{
+    width:100%;
+    padding:12px 20px;
+  }
+  details{
+    padding:16px 20px;
+  }
+  .bulk-controls{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .bulk-btn{
+    width:100%;
+  }
+  .modal-inner{
+    padding:20px;
+    border-radius:16px;
+  }
+  .modal-header{
+    flex-direction:column;
+    gap:12px;
+  }
+  .nav-btn{
+    width:100%;
+  }
+  .modal-actions{
+    flex-direction:column;
+  }
+  .modal-actions button{
+    width:100%;
+  }
 }
 
 /* calendar modal */
