@@ -9,9 +9,29 @@ import re
 
 
 ROTATION_MAP = {
-    "院外-救急しない": "OFFSITE_NO_ER",
-    "院外-救急希望": "OFFSITE_ER_OK",
     "大学病院でローテート": "UNIV_ROTATION",
+    "大学外‐救急&院外希望": "OFFSITE_DUAL_PREF",
+    "大学外-救急&院外希望": "OFFSITE_DUAL_PREF",
+    "大学外‐院外のみ希望": "OFFSITE_OFFSITE_ONLY",
+    "大学外-院外のみ希望": "OFFSITE_OFFSITE_ONLY",
+    "大学外‐救急のみ希望": "OFFSITE_ER_ONLY",
+    "大学外-救急のみ希望": "OFFSITE_ER_ONLY",
+    "大学外‐院外も救急も希望しない": "OFFSITE_NO_PREF",
+    "大学外-院外も救急も希望しない": "OFFSITE_NO_PREF",
+    # legacy mappings for backward compatibility
+    "院外-救急しない": "OFFSITE_NO_PREF",
+    "院外-救急希望": "OFFSITE_DUAL_PREF",
+}
+
+
+ROTATION_REASON_LABELS = {
+    "UNIV_ROTATION": "大学病院でローテート",
+    "OFFSITE_DUAL_PREF": "大学外‐救急&院外希望",
+    "OFFSITE_OFFSITE_ONLY": "大学外‐院外のみ希望",
+    "OFFSITE_ER_ONLY": "大学外‐救急のみ希望",
+    "OFFSITE_NO_PREF": "大学外‐院外も救急も希望しない",
+    "OFFSITE_NO_ER": "院外-救急しない",
+    "OFFSITE_ER_OK": "院外-救急希望",
 }
 
 
@@ -46,22 +66,23 @@ def parse_sheet1(df, month: str, col_map: Dict[str, Any] = None) -> Tuple[List[R
         raw_rot = row.get(col_map['rotation']) if col_map['rotation'] in row else row.iloc[3] if len(row) > 3 else None
         rot = str(raw_rot).strip() if raw_rot is not None else ""
         rotation_type = ROTATION_MAP.get(rot, 'UNIV_ROTATION')
+        rotation_reason_label = rot if rot else ROTATION_REASON_LABELS.get(rotation_type, rotation_type)
 
         ng_dates_set = set()
         ng_reasons = {}
 
         # Apply rotation-based NG additions
-        if rotation_type == 'OFFSITE_NO_ER':
+        if rotation_type in {'OFFSITE_OFFSITE_ONLY', 'OFFSITE_NO_PREF', 'OFFSITE_NO_ER'}:
             # all dates in month
             for d in get_month_dates(year, mon):
                 ng_dates_set.add(d.isoformat())
-                ng_reasons.setdefault(d.isoformat(), []).append('rotation:院外-救急しない')
-        elif rotation_type == 'OFFSITE_ER_OK':
+                ng_reasons.setdefault(d.isoformat(), []).append(f'rotation:{rotation_reason_label}')
+        elif rotation_type in {'OFFSITE_DUAL_PREF', 'OFFSITE_ER_ONLY', 'OFFSITE_ER_OK'}:
             # add all weekdays (Mon-Fri) but exclude jpholiday
             for d in get_month_dates(year, mon):
                 if d.weekday() < 5 and not is_holiday(d):
                     ng_dates_set.add(d.isoformat())
-                    ng_reasons.setdefault(d.isoformat(), []).append('rotation:院外-救急希望')
+                    ng_reasons.setdefault(d.isoformat(), []).append(f'rotation:{rotation_reason_label}')
 
         # Manual NG columns
         for col in col_map.get('ng_cols', []):
