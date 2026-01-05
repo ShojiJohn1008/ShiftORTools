@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ShiftORTools - Config Editor</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/static/styles.css?v=2">
+  <link rel="stylesheet" href="/static/styles.css?v=3">
 </head>
 <body>
   <main>
@@ -15,10 +15,10 @@
     <div id="message" aria-live="polite"></div>
 
     <div id="editor">
-      <details class="mb-4 bg-indigo-50 border border-indigo-100 rounded-lg p-4 shadow-sm">
-        <summary class="flex items-center justify-between cursor-pointer list-none">
-          <span class="text-sm font-semibold text-indigo-700">スプレッドシート取り込み仕様</span>
-          <span class="ml-2 text-xs text-gray-500">クリックで詳細</span>
+      <details class="spec-details">
+        <summary>
+          📋 スプレッドシート取り込み仕様
+          <span class="details-hint">（クリックで詳細を表示）</span>
         </summary>
         <div class="mt-4 space-y-4 text-sm text-gray-700">
           <p>Google スプレッドシートからエクスポートした CSV/XLSX を前提にしています。列位置が異なる場合はアップロード前に整形してください。</p>
@@ -97,9 +97,12 @@
         </div>
         <div id="upload-result" class="upload-result"></div>
       </div>
-      <div style="margin-top:8px;">
-        <label>一人当たり上限回数: <input id="max-assignments" type="number" min="1" value="2" class="wk" /></label>
-        <small class="muted">手動割当時の上限（未指定は2）</small>
+      <div class="settings-row">
+        <label class="settings-label">
+          <span class="settings-label-text">一人当たり上限回数</span>
+          <input id="max-assignments" type="number" min="1" value="2" class="wk" />
+        </label>
+        <small class="settings-hint">手動割当時の上限（未指定は2）</small>
       </div>
       <table id="config-table">
         <thead>
