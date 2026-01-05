@@ -15,6 +15,75 @@
     <div id="message" aria-live="polite"></div>
 
     <div id="editor">
+      <details class="mb-4 bg-indigo-50 border border-indigo-100 rounded-lg p-4 shadow-sm">
+        <summary class="flex items-center justify-between cursor-pointer list-none">
+          <span class="text-sm font-semibold text-indigo-700">スプレッドシート取り込み仕様</span>
+          <span class="ml-2 text-xs text-gray-500">クリックで詳細</span>
+        </summary>
+        <div class="mt-4 space-y-4 text-sm text-gray-700">
+          <p>Google スプレッドシートからエクスポートした CSV/XLSX を前提にしています。列位置が異なる場合はアップロード前に整形してください。</p>
+
+          <section class="bg-white border border-indigo-100 rounded-md p-4 space-y-3">
+            <header>
+              <h3 class="text-xs font-semibold text-indigo-600 uppercase tracking-wide">シート1: 研修医 NG 日</h3>
+              <p class="text-xs text-gray-500">対象月ごとの個人 NG 情報を取り込みます。</p>
+            </header>
+            <ul class="list-disc list-inside space-y-2">
+              <li><span class="font-semibold">列C</span>: 研修医氏名。全角半角は自動調整します。</li>
+              <li><span class="font-semibold">列D</span>: ローテーション希望。下表のいずれかを入力してください。</li>
+              <li><span class="font-semibold">列G〜J</span>: NG 日入力欄。カンマ・改行・スペース区切りで複数日を指定できます。</li>
+            </ul>
+            <div class="overflow-auto">
+              <table class="min-w-full text-xs text-gray-600">
+                <thead>
+                  <tr class="bg-indigo-100/60">
+                    <th class="border px-3 py-2">ローテーション区分</th>
+                    <th class="border px-3 py-2">自動で追加される NG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border px-3 py-2">大学病院でローテート</td>
+                    <td class="border px-3 py-2">自動追加なし</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-3 py-2">大学外‐救急&院外希望</td>
+                    <td class="border px-3 py-2">対象月の平日（祝日を除く）</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-3 py-2">大学外‐院外のみ希望</td>
+                    <td class="border px-3 py-2">対象月の全日</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-3 py-2">大学外‐救急のみ希望</td>
+                    <td class="border px-3 py-2">対象月の平日（祝日を除く）</td>
+                  </tr>
+                  <tr>
+                    <td class="border px-3 py-2">大学外‐院外も救急も希望しない</td>
+                    <td class="border px-3 py-2">対象月の全日</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-gray-500">※ 上記以外の値を入力した場合は「大学病院でローテート」として扱われます。</p>
+          </section>
+
+          <section class="bg-white border border-indigo-100 rounded-md p-4 space-y-3">
+            <header>
+              <h3 class="text-xs font-semibold text-indigo-600 uppercase tracking-wide">シート2: 院外研修スケジュール</h3>
+              <p class="text-xs text-gray-500">院外研修日に出勤できない枠を自動 NG として反映します。</p>
+            </header>
+            <ul class="list-disc list-inside space-y-2">
+              <li><span class="font-semibold">列A</span>: 日付。空欄の場合は直前の有効な日付を引き継ぎます。</li>
+              <li><span class="font-semibold">列B</span>: 曜日。解析では使用しませんが、空欄でも構いません。</li>
+              <li><span class="font-semibold">列C</span>: 備考。<code>○○研修：氏名</code> のように「全角/半角コロン」で氏名を区切ってください。</li>
+              <li>備考に氏名が複数ある場合はカンマや改行で区切ると順に取り込みます。</li>
+            </ul>
+            <p class="text-xs text-gray-500">※ 氏名が既存の研修医リストと一致しない場合は「不明な名前」として表示されます。</p>
+          </section>
+        </div>
+      </details>
+
       <div id="upload-area" class="upload-area">
         <label>対象月: <input type="month" id="upload-month" /></label>
         <div>

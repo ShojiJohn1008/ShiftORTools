@@ -15,6 +15,17 @@ from typing import Set
 
 HOSPITALS = ["大学病院", "永井病院", "遠山病院", "岩崎病院"]
 
+NO_ASSIGNMENT_ROTATIONS = {
+    'OFFSITE_OFFSITE_ONLY',
+    'OFFSITE_NO_PREF',
+    'OFFSITE_NO_ER',
+    '院外-救急しない',
+    '大学外‐院外のみ希望',
+    '大学外-院外のみ希望',
+    '大学外‐院外も救急も希望しない',
+    '大学外-院外も救急も希望しない',
+}
+
 
 def assign_shifts(resident_names: List[str], hospital_slots: Dict[str, int], total_assignments_per_resident: int = 2) -> Dict[str, Any]:
     n_res = len(resident_names)
@@ -106,7 +117,7 @@ def assign_shifts_by_day(residents: List[Dict[str, Any]], month: str, hospital_w
             req_per_res.append(int(r['required']))
             continue
         rot = r.get('rotation_type', '')
-        if rot == 'OFFSITE_NO_ER' or rot == '院外-救急しない':
+        if rot in NO_ASSIGNMENT_ROTATIONS:
             req_per_res.append(0)
         else:
             req_per_res.append(int(total_assignments_per_resident))
@@ -144,7 +155,7 @@ def assign_shifts_by_day(residents: List[Dict[str, Any]], month: str, hospital_w
             req_per_res.append(int(r['required']))
             continue
         rot = r.get('rotation_type', '')
-        if rot == 'OFFSITE_NO_ER' or rot == '院外-救急しない':
+        if rot in NO_ASSIGNMENT_ROTATIONS:
             req_per_res.append(0)
         else:
             # default behavior
@@ -320,7 +331,7 @@ def assign_shifts_by_date(residents: List[Dict[str, Any]], month: str, hospital_
             req_per_res.append(int(r['required']))
             continue
         rot = r.get('rotation_type', '')
-        if rot == 'OFFSITE_NO_ER' or rot == '院外-救急しない':
+        if rot in NO_ASSIGNMENT_ROTATIONS:
             req_per_res.append(0)
         else:
             req_per_res.append(int(total_assignments_per_resident))
@@ -356,7 +367,7 @@ def assign_shifts_by_date(residents: List[Dict[str, Any]], month: str, hospital_
             req_per_res.append(int(r['required']))
             continue
         rot = r.get('rotation_type', '')
-        if rot == 'OFFSITE_NO_ER' or rot == '院外-救急しない':
+        if rot in NO_ASSIGNMENT_ROTATIONS:
             req_per_res.append(0)
         else:
             req_per_res.append(int(total_assignments_per_resident))
